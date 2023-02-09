@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author"content="Dhayana N. Silva">
+    <meta name="description" content="Site de casamento responsivo">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Casamento">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Site de casamento</title>
+</head>
+<body>
+    <div class="container">
+        <div class="lateral">
+            
+        </div>
+        <div class="principal">
+            <header>
+                <nav>
+                    <ul class="navegacao">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#presentes">Presentes</a></li>
+                        <li><a href="#presenca">Presença</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="conteudo">
+                <header class="cabecalho">
+                    <h1>Alberto <span>&hearts;</span> Carol</h1>
+                    <link href="https://fonts.cdnfonts.com/css/exmouth" rel="stylesheet">
+                    <style>
+                        @import url('https://fonts.cdnfonts.com/css/exmouth');
+                    </style>
+            
+                    <p>Faltam x dias</p>
+                </header>
+                
+                <section id="sobre">
+                    <h3 class="titulo">Sobre</h3>
+                    <p class="texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <div class="local">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64343350.15082779!2d-64.54700936468234!3d-10.163869131444116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrasil!5e0!3m2!1spt-BR!2sbr!4v1590693337122!5m2!1spt-BR!2sbr" frameborder="0"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="400" height="300"></iframe>
+                        
+                        <div class="detalhes-local">
+                            <p><strong>Local:</strong> Rua xxxx</p>
+                            <p><strong>Data:</strong> xx de janeiro de 2023</p>
+                            <p><strong>Horário:</strong> 16:00 (Horário de Brasília)</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="presentes">
+                    <h3 class="titulo">Presentes</h3>
+                    <p class="texto">Loren Ipsum <strong>Loren Ipsum</strong>, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </section>
+
+                <section id="presenca">
+                    <h3 class="titulo">Presença</h3>
+                    <p class="texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <button id="abrir-modal" class="botao-verde">Informar presença</button>
+                </section>
+
+                <section id="contato">
+                    <h3 class="titulo">Contato</h3>
+                    <p class="texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <form>
+                        <label for="nome">Nome:</label>
+                        <input id="nome" type="text" placeholder="Nome" required >
+                        
+                        <label for="telefone">Telefone:</label>
+                        <input id="telefone" type="text" placeholder="(xx) xxxxx-xxxx" required >
+                        
+                        <label for="msg-contato">Mensagem:</label>
+                        <textarea id="msg-contato" type="textearea" placeholder="Deixe sua mensagem aqui..." required ></textarea> 
+                        
+                        <button class="botao">Enviar</button>
+                    </form>
+                </section>  
+                
+                <div id="modal-container" class="modal-container">
+                    <div class="modal">
+                        <button id="fechar-modal" class="fechar-modal botao-vermelho">X</button>
+                        
+                        <h2 class="titulo-modal">Confirmação de presença</h2>
+
+                        <form>
+                            <label>Nome: </label>
+                            <input type="text" placeholder="Nome" required >
+
+                            <label>Telefone para contato: </label>
+                            <input id="telefone-modal" type="text" placeholder="(xx) xxxxx-xxxx" required >
+                            
+                            <div class="botoes-radio ">
+                                <input type="radio" name="idade" value="Adulto" checked>
+                                <label>Adulto</label>
+
+                                <input type="radio" name="idade" value="Adolescente">
+                                <label>Adolescente</label>
+
+                                <input type="radio" name="idade" value="Criança">
+                                <label>Criança</label>
+                            </div>
+
+                            <div class="botoes-radio ">
+                                <p>Voce come alimentos de origem animal?</p>
+                                <input type="radio" name="alimentacao" value="sim" checked>
+                                <label>sim</label>
+
+                                <input type="radio" name="alimentacao" value="nao">
+                                <label>Não</label>    
+                            </div>
+                            
+                            <label>Deixe uma mensagem para os noivos:</label>
+                            <textarea type="textearea" placeholder="Deixe sua mensagem aqui..."></textarea> 
+                            
+                            <div class="botoes-confirmacao">
+                                <button class="botao">Infelizmente não poderei ir</button>
+                                <button class="botao-verde">Estarei presente</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <footer class="rodape">
+                Copyright (c) 2023 Alberto Emanuel S. Teixeira
+            </footer>
+        </div>
+    </div> 
+    <script src="script.js"></script>  
+</body>
+</html>
