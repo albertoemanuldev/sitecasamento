@@ -16,4 +16,7 @@ Projeto com a finalidade de treinar habilidades relativa as linguagens HTML, CSS
 * abra a pasta que será  criada
 * abra o arquivo "index.html" com o navegador de sua preferência
 
+## Database
+Inserir banco de dados para utilização do formulário da confirmação da presença.
+
 Copyright (c) 2023 Alberto Emanuel S. Teixeira
